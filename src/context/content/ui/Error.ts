@@ -13,8 +13,8 @@ export const injectErrorMessage = (response: ResponseWithMetadata, overrideError
     
     document.body.appendChild(container);
     
-    if(response.stack) console.warn(response.stack)
-    else console.warn(overrideError ? overrideError : response.error);
+    if(response.stack) console.warn('CALC PLUGIN ERROR: ', response.stack)
+    else console.warn('CALC PLUGIN ERROR: ', overrideError ? overrideError : response.error);
 
     setTimeout(() => document.body.removeChild(container), 10000);
 
