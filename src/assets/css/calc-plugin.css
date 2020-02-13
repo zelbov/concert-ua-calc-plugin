@@ -16,8 +16,8 @@
 .plugin-ui-component {
 
     position: fixed;
-    bottom: 20px;
-    left: calc(50% - 160px);
+    top: 120px;
+    right: 20px;
     display: block;
     width: 300px;
     padding: 8px;
