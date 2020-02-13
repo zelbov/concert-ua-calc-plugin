@@ -1,0 +1,64 @@
+{
+    "name": "Concert.ua Seats calculator",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Concert.ua seats calculation plugin",
+    "offline_enabled": true,
+    "minimum_chrome_version": "68",
+    "icons": {
+      "16": "assets/images/icon-16.png",
+      "128": "assets/images/icon-128.png"
+    },
+    "background": {
+      "scripts": [
+        "background.bundle.js"
+      ]
+    },
+    "permissions": [
+      "tabs",
+      "https://concert.ua/*",
+      "bookmarks",
+      "clipboardRead",
+      "clipboardWrite",
+      "cookies",
+      "history",
+      "idle",
+      "management",
+      "notifications",
+      "topSites",
+      "storage",
+      "webNavigation",
+      "webRequest",
+      "webRequestBlocking",
+      "proxy",
+      "unlimitedStorage"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://concert.ua/*/booking/*"
+        ],
+        "js": [
+          "contentscript.bundle.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": true
+      }
+    ],
+    "omnibox": {
+      "keyword": "OMNIBOX-KEYWORD"
+    },
+    "browser_action": {
+      "default_icon": {
+        "19": "assets/images/icon-19.png",
+        "38": "assets/images/icon-38.png"
+      },
+      "default_title": "Concert.ua seats calculation plugin",
+      "default_popup": "assets/html/popup.html"
+    },
+    "web_accessible_resources": [
+      "contenthook.bundle.js",
+      "assets/*"
+    ]
+  }
+  

@@ -1,0 +1,50 @@
+
+
+.plugin-err-msg {
+
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: #FFF;
+
+}
+
+.plugin-ui-component {
+
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% - 160px);
+    display: block;
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #000;
+    height: 150px;
+    background: #f0f0f0;
+    font-size: 12px;
+    
+}
+
+.plugin-row-ext {
+
+    position: absolute;
+    border: 1px solid #000;
+    width: fit-content;
+    height: fit-content;
+    z-index: 99999;
+
+}
+
+.switch-price {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+}
+
+.switch-price.hidden {
+    display: none;
+}
