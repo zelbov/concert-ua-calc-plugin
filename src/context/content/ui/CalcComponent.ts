@@ -139,7 +139,7 @@ const getTicketTypeIdFromClassList = (elem: Element | HTMLElement) => {
 var layout : LayoutContainer[] = [];
 
 const parseLayout = () => {
-    let all = document.querySelector<HTMLElement>('svg#Слой_1')!, // LOL
+    let all = document.querySelector<HTMLElement>('svg.leaflet-image-layer')!,
         children = all.children,
         containers : LayoutContainer[] = [];
 

@@ -14,7 +14,7 @@ export const requestPageMetadata = async () => {
 
         let interval = setInterval(() => {
 
-            if(document.querySelector<HTMLElement>('svg#Слой_1')){
+            if(document.querySelector<HTMLElement>('svg.leaflet-image-layer')){
                 clearInterval(interval);
                 resolve();
             }
@@ -22,6 +22,8 @@ export const requestPageMetadata = async () => {
         }, 50);
 
     })
+
+    console.log('CALC: page loaded, requesting metadata...');
 
     //Sending command...
    let command : MetadataRequestMessage = { command: 'concert_ua_metadata_request' },
