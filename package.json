@@ -1,6 +1,6 @@
 {
   "name": "concert-ua-calc-plugin",
-  "version": "0.2.0",
+  "version": "1.0.1-beta",
   "description": "Chrome plugin for automated calculation of seats & budget for site concert.ua",
   "main": "dist/index.js",
   "scripts": {
